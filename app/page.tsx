@@ -207,7 +207,7 @@ export default function Home() {
             </div>
 
             <a
-              href="/app-release.apk"
+              href="https://collection-yupicash.vercel.app"
               download
               className="
                 relative
