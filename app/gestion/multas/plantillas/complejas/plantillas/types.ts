@@ -1,0 +1,40 @@
+export type OptionItem = {
+  id: string;
+  label: string;
+  value: string;
+  raw: Record<string, unknown>;
+};
+
+export type PlantillaProps = {
+  cardBg: string;
+  primaryColor: string;
+  fotoHabilitada: boolean;
+  resolvedLogoUrl: string | null;
+  productoTitulo: string;
+  monto: string;
+  setMonto: (value: string) => void;
+  importePagar: string;
+  setImportePagar: (value: string) => void;
+  fechaVencimiento: string;
+  setFechaVencimiento: (value: string) => void;
+  diasVencidos: number;
+  isCo: boolean;
+  metodoPagoId: string;
+  setMetodoPagoId: (value: string) => void;
+  cuentaId: string;
+  setCuentaId: (value: string) => void;
+  optionsMetodo: OptionItem[];
+  optionsCuenta: OptionItem[];
+  metodoPagoLabel: string;
+  cuentaBancaria: string;
+  mostrarExtras: boolean;
+  nombre: string;
+  setNombre: (value: string) => void;
+  telefono: string;
+  setTelefono: (value: string) => void;
+  loadingListas: boolean;
+  disabled: boolean;
+  saving: boolean;
+  onToggleFoto: () => void;
+  onSubmit: () => void;
+};

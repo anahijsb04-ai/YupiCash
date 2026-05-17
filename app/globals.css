@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.date-invert {
+  transform: scaleX(-1);
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Re-invertimos solo el texto */
+.date-invert::-webkit-datetime-edit {
+  transform: scaleX(-1);
+}
+
+/* Ajuste del icono */
+.date-invert::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.animate-fadeInUp { animation: fadeInUp 700ms ease-out both; }
+.animate-cardFloat { animation: cardFloat 6s ease-in-out infinite; }
+.animate-shake { animation: shake 350ms ease-in-out both; }
+
+.input {
+  @apply w-full rounded-2xl border border-slate-200/70
+  bg-white/70 px-4 py-2 text-sm
+  focus:outline-none focus:ring-2 focus:ring-sky-300/60;
+}
+
+.th {
+  @apply px-4 py-3 text-left font-medium;
+}
+
+.td {
+  @apply px-4 py-3 whitespace-nowrap;
+}
