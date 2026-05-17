@@ -267,7 +267,7 @@ export default function Home() {
             </div>
 
             <Link
-              href="/landing"
+              href="https://yupicash.vercel.app"
               className="
                 relative
                 mt-10
