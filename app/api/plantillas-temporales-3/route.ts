@@ -33,7 +33,7 @@
 
   function safeTipoPlantilla(v: any) {
     const s = String(v ?? "").trim();
-    return ["1", "2", "3", "4","5", "6", "7"].includes(s) ? s : "1";
+    return ["1", "2", "3", "4","5", "6", "7", "8"].includes(s) ? s : "1";
   }
 
   function generarToken() {
