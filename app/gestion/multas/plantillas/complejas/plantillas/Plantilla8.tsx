@@ -133,9 +133,7 @@ export default function Plantilla5(props: PlantillaProps) {
       El tipo_plantilla se envía como 8.
     */
 
-    onSubmit({
-      tipo_plantilla: 8,
-    });
+    onSubmit();
   };
 
   // =========================
