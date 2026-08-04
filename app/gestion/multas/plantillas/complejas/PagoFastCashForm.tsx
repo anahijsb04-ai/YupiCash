@@ -10,7 +10,7 @@ import Plantilla5 from "./plantillas/Plantilla5";
 import Plantilla6 from "./plantillas/Plantilla6";
 import Plantilla7 from "./plantillas/Plantilla7";
 import Plantilla8 from "./plantillas/Plantilla8";
-import Plantilla9 from "./plantillas/Plantilla9";
+import Plantilla9 from "./plantillas/Platntilla9/index";
 import type { PlantillaProps } from "./plantillas/types";
 
 type AnyRecord = Record<string, unknown>;
